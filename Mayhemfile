@@ -1,0 +1,8 @@
+project: libnmea
+target: libnmea-fuzz
+testsuite:
+  - file://fuzz/corpus
+
+cmds:
+  - cmd: /libnmea-fuzz
+    libfuzzer: true
